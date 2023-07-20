@@ -1,0 +1,20 @@
+def helpp(a):
+    while True:
+
+        print('\033[42m~' * 23)
+        print('SISTEMA DE AJUDA PYHELP')
+        print('~' * 23)
+        print('\033[m')
+        b = input(a)
+        if b == 'fim':
+            print('\033[1;31mATÉ LOGO\033[m')
+            break
+        print(f'\033[46mAcessando o manual do comando {b}\033[m')
+        print('\033[30;47m')
+        help(b)
+        print('\033[m')
+
+
+
+n = helpp('Função ou Biblioteca > ')
+
