@@ -1,0 +1,13 @@
+def metade(a):
+    met = a / 2
+    return met
+
+
+def dobro(b):
+    bod = b * 2
+    return bod
+
+
+def aumentou(c, d):
+    aum = c * d / 100 + c
+    return aum
