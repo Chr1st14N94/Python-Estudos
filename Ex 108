@@ -1,0 +1,16 @@
+def moeda(preco=0, moeda='R$:'):
+    return f'{moeda}{preco:>.2f}'.replace('.', ',')
+
+def metade(a=0):
+    met = a / 2
+    return met
+
+
+def dobro(b=0):
+    bod = b * 2
+    return bod
+
+
+def aumentou(c=0, d=0):
+    aum = c * d / 100 + c
+    return aum
