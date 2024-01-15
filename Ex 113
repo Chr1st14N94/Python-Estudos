@@ -1,0 +1,27 @@
+def leiaint(msg):
+    while True:
+        try:
+            n = int(input(msg))
+        except (ValueError, TypeError):
+            print(f' Não é um número inteiro, por favor, Digite um número inteiro!')
+            continue
+        except (KeyboardInterrupt):
+            print('Você não digitou nenhum valor!!')
+        else:
+            return n
+
+
+def leiafloat(msg):
+    while True:
+        try:
+            n = float(input(msg))
+        except(ValueError, TypeError):
+            print(f'Não é um número fracionado, por favor, Digite um número inteiro!')
+            continue
+        else:
+            return n
+
+
+n1 = leiaint('Digite um número inteiro: ')
+n2 = leiafloat('Digite um número fracionado: ')
+print(f'O valor digitado foi {n1} e {n2}')
